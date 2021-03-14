@@ -1,0 +1,231 @@
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #606060;
+    text-decoration: none;
+}
+
+/* MARGIN E PADDING */
+
+.p-t-10{
+    padding-top: 10px;
+}
+
+.p-r-10{
+    padding-right: 10px;
+}
+
+.p-l-5{
+    padding-left: 5px;
+}
+
+.p-l-10{
+    padding-left: 10px;
+}
+
+.p-b-5{
+    padding-bottom: 5px;
+}
+
+.p-b-10{
+    padding-bottom: 10px;
+}
+
+.m-t-10{
+    margin-top: 10px;
+}
+
+.m-t-20{
+    margin-top: 20px;
+}
+
+.m-b-10{
+    margin-bottom: 10px;
+}
+
+.m-b-20{
+    margin-bottom: 20px;
+}
+
+/* COLOR */
+
+.white{
+    color: white;
+}
+
+/* MEDIA QUERI  */
+
+/* RESPONSIVE XS 0-600PX */
+
+@media screen and (min-width:0px){
+    
+}
+
+/* RESPONSIVE S 601px - 767px */
+
+@media screen and (min-width:601px){
+    
+}
+
+/* RESPONSIVE M 768px - 1199px */
+
+@media screen and (min-width:768px){
+    
+}
+
+/* RESPONSIVE L 1200px IN SU */
+
+@media screen and (min-width:1200px){
+    /*  MAIN  */
+   
+    .main-app{
+        display: flex;
+        width: 100%;
+        height: 90vh;
+        background-color: red;
+    }
+
+    /* MAIN MENU LEFT */
+
+    /* ASIDE */
+   
+    aside.menu-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 15%;
+        padding-left: 25px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    aside.menu-left img{
+        width: 150px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    aside.menu-left nav.nav-bar .playlist ul li{
+        padding-top: 20px;
+    }
+    aside.menu-left nav.nav-bar ul li a{
+        display: flex;
+        align-items: center;
+    }
+
+    aside.menu-left nav.nav-bar ul li img{
+        width: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        filter: grayscale(100%);
+    }
+
+    aside.menu-left .nav-bar .new-playlist{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    aside.menu-left .nav-bar .new-playlist a i{
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+        line-height: 45px;
+        text-align: center;
+        color: black;
+        background-color: #a3a3a3;
+    }
+
+    aside.menu-left .playlist{
+        overflow: auto;
+        height: 40vh;
+    }
+
+    /* ASIDE FOOTER */
+
+    aside.menu-left .aside-footer a{
+        display: flex;
+        align-items: center;
+    }
+
+    aside.menu-left .aside-footer .download{
+        border-bottom: 1px solid #717171;
+        padding-bottom: 10px;
+        margin-right: 20px;
+    }
+
+    aside.menu-left .aside-footer .download img{
+        width: 20px;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    aside.menu-left .aside-footer .profilo img{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #808080;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+
+    /* CONTENUTO RIGHT */
+
+    main .content-right{
+        width: 85%;
+        height: 90vh;
+    }
+
+    main .content-right .header-album{
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        align-items: center;
+        justify-content: right;
+    }
+
+    main .content-right .musica{
+        width: 100%;
+        height: calc(100vh - 20vh);
+    }
+
+    main .musica .menu-album{
+        width: 50%;
+        margin: auto;
+        background-color: white;
+    }
+
+    main.main-app .musica .album{
+        display: flex;
+    }
+
+    main.main-app .musica .album .img-album{
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+    }
+
+    /* FOOTER */
+    .app-footer{
+        height: 10vh;
+        background-color: green;
+    }
+
+}
+
