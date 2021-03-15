@@ -26,6 +26,10 @@ a{
     padding-top: 10px;
 }
 
+.p-t-20{
+    padding-top: 20px;
+}
+
 .p-r-10{
     padding-right: 10px;
 }
@@ -46,12 +50,20 @@ a{
     padding-bottom: 10px;
 }
 
+.p-b-50{
+    padding-bottom: 50px;
+}
+
 .m-t-10{
     margin-top: 10px;
 }
 
 .m-t-20{
     margin-top: 20px;
+}
+
+.m-l-15{
+    margin-left: 15px;
 }
 
 .m-b-10{
@@ -62,10 +74,18 @@ a{
     margin-bottom: 20px;
 }
 
+.m-b-50{
+    margin-bottom: 50px;
+}
+
 /* COLOR */
 
 .white{
     color: white;
+}
+
+.gray{
+    color: #7c7e83;
 }
 
 /* MEDIA QUERI  */
@@ -73,6 +93,138 @@ a{
 /* RESPONSIVE XS 0-600PX */
 
 @media screen and (min-width:0px){
+     /*  MAIN  */
+   
+    .main-app{
+        display: flex;
+        width: 100%;
+        height: 90vh;
+        background-color: red;
+    }
+
+    /* MAIN MENU LEFT */
+
+    /* ASIDE */
+   
+    aside.menu-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 15%;
+        padding-left: 25px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    aside.menu-left img{
+        width: 150px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    aside.menu-left nav.nav-bar .playlist ul li{
+        padding-top: 20px;
+    }
+    aside.menu-left nav.nav-bar ul li a{
+        display: flex;
+        align-items: center;
+    }
+
+    aside.menu-left nav.nav-bar ul li img{
+        width: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        filter: grayscale(100%);
+    }
+
+    aside.menu-left .nav-bar .new-playlist{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    aside.menu-left .nav-bar .new-playlist a i{
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+        line-height: 45px;
+        text-align: center;
+        color: black;
+        background-color: #a3a3a3;
+    }
+
+    aside.menu-left .playlist{
+        overflow: auto;
+        height: 40vh;
+    }
+
+    /* ASIDE FOOTER */
+
+    aside.menu-left .aside-footer a{
+        display: flex;
+        align-items: center;
+    }
+
+    aside.menu-left .aside-footer .download{
+        border-bottom: 1px solid #717171;
+        padding-bottom: 10px;
+        margin-right: 20px;
+    }
+
+    aside.menu-left .aside-footer .download img{
+        width: 20px;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    aside.menu-left .aside-footer .profilo img{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #808080;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+
+    /* CONTENUTO RIGHT */
+
+    main .content-right{
+        width: 85%;
+        height: 90vh;
+    }
+
+    main .content-right .header-album{
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        align-items: center;
+        justify-content: right;
+    }
+
+    main .content-right .musica{
+        width: 100%;
+        height: calc(100vh - 20vh);
+    }
+
+    main .musica .menu-album{
+        width: 50%;
+        margin: auto;
+    }
+
+    main.main-app .musica .album{
+        display: flex;
+    }
+
+    main.main-app .musica .album .img-album{
+        overflow: hidden;
+    }
+
+    /* FOOTER */
+    .app-footer{
+        height: 10vh;
+        background-color: green;
+    }
     
 }
 
@@ -192,33 +344,84 @@ a{
         height: 90vh;
     }
 
+    /* CONTENT RIGHT HEADER */
+
     main .content-right .header-album{
         display: flex;
         width: 100%;
         height: 10vh;
         align-items: center;
         justify-content: right;
+        background-color: #080b12;
     }
+
+    main .content-right .header-album .btn{
+        padding: 10px 50px;
+        margin-right: 5px;
+        font-size: 16px;
+        color: white;
+        background-color: #080b12;
+        border-radius: 20px;
+    }
+
+    /* CONTENT RIGHT MUSICA */
 
     main .content-right .musica{
         width: 100%;
         height: calc(100vh - 20vh);
+        background-color: #141922;
+        overflow: auto;
+        overflow-x: hidden;
     }
 
+    /* CONTENT RIGHT MENU ALBUM */
+
     main .musica .menu-album{
-        width: 50%;
+        width: 70%;
         margin: auto;
-        background-color: white;
+        font-size: 15px;
+        color: #797b80;
     }
+
+    main .menu-album ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    main .menu-album li{
+        margin-right: 15px;
+    }
+
+    main .menu-album li a{
+        color: #797b80;
+    }
+
+    /* CONTENT RIGHT ALBUM */
 
     main.main-app .musica .album{
         display: flex;
+        width: 100%;
+        margin-left: 15px;
     }
 
     main.main-app .musica .album .img-album{
-        width: 200px;
-        height: 200px;
-        background-color: purple;
+        width: calc(100% / 6 - 20px);
+        text-align: center;
+        margin-right: 15px;
+    }
+
+    main.main-app .musica .album .img-album img{
+        width: 100%;
+    }
+
+    main.main-app .musica .album .img-album h4{
+        padding-top: 15px;
+        color: white;
+    }
+
+    main.main-app .musica .album .img-album h5{
+        padding-top: 10px;
+        color: #7c7e83;
     }
 
     /* FOOTER */
