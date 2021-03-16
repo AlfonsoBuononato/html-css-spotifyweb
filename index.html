@@ -15,6 +15,27 @@
     <main class="main-app">
 
         <!-- MENU DI NAVIGAZIONE -->
+
+        <!-- ATTENZIONE QUESTO MENù SARà VISIBILE
+             SOLO NELLA SEZIONE RESPONSIVE XS -->
+        <aside class="menu-left-xs" >
+            <div class="icon-xs-top">
+                <ul>
+                    <li><a href="#"><img src="img/logo-small.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/home.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/search.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/libreria.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="icon-xs-bottom">
+                <ul>
+                    <li><a href="#"><img src="img/download.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/profile.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- FINE MENU IMPORTANTE DA VISUALIZZARE
+             SOLO NELLA SEZIONE RESPONSIVE XS -->
         <aside class="menu-left">
             <!-- ASIDE TOP -->
             <div class="aside-top">
@@ -163,12 +184,12 @@
       <div class="brano">
         <img src="img/sinister.jpeg" alt="">
         <div class="title">
-            <h4 class="m-l-20 white">Sinister</h4>
-            <h5 class="m-l-20 gray">Brano Nome</h5>
+            <h4><a class="m-l-20 white" href="#">Sinister</a></h4>
+            <h5><a class="m-l-20 gray" href="#">Brano Nome</a></h5>
         </div>
-        <div class="icon m-l-100">
+        <div class="icon">
             <i class="far fa-heart"></i>
-            <i class="m-l-15 far fa-folder"></i>
+            <a href="#"><i class="gray m-l-15 far fa-folder"></i></a>
         </div>
       </div>  
       <div class="controller">
@@ -184,13 +205,24 @@
         <div class="controller-bottom">
             <div class="minutes">
                 <span>0:25</span>
-                <hr>
+                <div class="linea-minuti">
+                    <hr>
+                    <hr>
+                </div>
                 <span>4:35</span>
             </div>
         </div>
       </div>
       <div class="volume">
-        ciao
+        <ul>
+            <li><a href="#"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#"><i class="fas fa-desktop"></i></a></li>
+            <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
+        </ul>
+        <div class="linea-minuti">
+            <hr>
+            <hr>
+        </div>
       </div>
     </footer>
 </body>

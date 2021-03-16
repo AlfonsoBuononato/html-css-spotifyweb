@@ -109,251 +109,60 @@ a{
 /* RESPONSIVE XS 0-600PX */
 
 @media screen and (min-width:0px){
-     /*  MAIN  */
-   
-    .main-app{
-        display: flex;
-        width: 100%;
-        height: 90vh;
-        background-color: red;
-    }
-
-    /* MAIN MENU LEFT */
-
-    /* ASIDE */
-   
-    aside.menu-left{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 15%;
-        padding-left: 25px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    aside.menu-left img{
-        width: 150px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    aside.menu-left nav.nav-bar .playlist ul li{
-        padding-top: 20px;
-    }
-    aside.menu-left nav.nav-bar ul li a{
-        display: flex;
-        align-items: center;
-    }
-
-    aside.menu-left nav.nav-bar ul li img{
-        width: 40px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 10px;
-        filter: grayscale(100%);
-    }
-
-    aside.menu-left .nav-bar .new-playlist{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    aside.menu-left .nav-bar .new-playlist a i{
-        font-size: 20px;
-        width: 45px;
-        height: 45px;
-        margin-right: 10px;
-        line-height: 45px;
-        text-align: center;
-        color: black;
-        background-color: #a3a3a3;
-    }
-
-    aside.menu-left .playlist{
-        overflow: auto;
-        height: 40vh;
-    }
-
-    /* ASIDE FOOTER */
-
-    aside.menu-left .aside-footer a{
-        display: flex;
-        align-items: center;
-    }
-
-    aside.menu-left .aside-footer .download{
-        border-bottom: 1px solid #717171;
-        padding-bottom: 10px;
-        margin-right: 20px;
-    }
-
-    aside.menu-left .aside-footer .download img{
-        width: 20px;
-        padding: 0;
-        margin-right: 10px;
-    }
-
-    aside.menu-left .aside-footer .profilo img{
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color: #808080;
-        padding: 0;
-        margin-right: 10px;
-    }
-
-
-    /* CONTENUTO RIGHT */
-
-    main .content-right{
-        width: 85%;
-        height: 90vh;
-    }
-
-    main .content-right .header-album{
-        display: flex;
-        width: 100%;
-        height: 10vh;
-        align-items: center;
-        justify-content: right;
-    }
-
-    main .content-right .musica{
-        width: 100%;
-        height: calc(100vh - 20vh);
-    }
-
-    main .musica .menu-album{
-        width: 50%;
-        margin: auto;
-    }
-
-    main.main-app .musica .album{
-        display: flex;
-    }
-
-    main.main-app .musica .album .img-album{
-        overflow: hidden;
-    }
-
-    /* FOOTER */
-    .app-footer{
-        height: 10vh;
-        background-color: green;
-    }
-    
-}
-
-/* RESPONSIVE S 601px - 767px */
-
-@media screen and (min-width:601px){
-    
-}
-
-/* RESPONSIVE M 768px - 1199px */
-
-@media screen and (min-width:768px){
-    
-}
-
-/* RESPONSIVE L 1200px IN SU */
-
-@media screen and (min-width:1200px){
     /*  MAIN  */
-   
+    
     .main-app{
         display: flex;
         width: 100%;
-        height: 90vh;
-        background-color: red;
+        height: calc(100vh - 100px);
     }
 
     /* MAIN MENU LEFT */
 
     /* ASIDE */
-   
+
     aside.menu-left{
+        display: none;
+    }
+
+    /* ATTENZIONE QUESTO MENU SARà VISIBILE SOLO NELLA SEZIONE XS */
+
+    aside.menu-left-xs{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 300px;
-        max-width: 100%;
-        padding-left: 25px;
-        overflow: hidden;
-        background-color: black;
+        width: 50px;
+        background-color: #000000;
+        padding: 0 10px;
     }
 
-    aside.menu-left img{
-        width: 150px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    aside.menu-left nav.nav-bar .playlist ul li{
-        padding-top: 20px;
-    }
-
-    aside.menu-left nav.nav-bar ul li a{
-        display: flex;
-        align-items: center;
-    }
-
-    aside.menu-left nav.nav-bar ul li img{
+    aside.menu-left-xs li ul img{
         width: 40px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 10px;
-        filter: grayscale(100%);
+        height: 40px;
     }
 
-    aside.menu-left .nav-bar .new-playlist{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    aside.menu-left .nav-bar .new-playlist a i{
-        font-size: 20px;
-        width: 45px;
-        height: 45px;
-        margin-right: 10px;
-        line-height: 45px;
-        text-align: center;
-        color: black;
-        background-color: #a3a3a3;
-    }
+    aside.menu-left-xs .icon-xs-top ul li{
+        padding-top: 20px;
+    } 
 
-    aside.menu-left .playlist{
-        overflow: auto;
-        height: 40vh;
-    }
 
-    /* ASIDE FOOTER */
-
-    aside.menu-left .aside-footer a{
+    aside.menu-left-xs .icon-xs-bottom ul{
         display: flex;
+        flex-direction: column;
         align-items: center;
     }
-
-    aside.menu-left .aside-footer .download{
-        border-bottom: 1px solid #717171;
-        padding-bottom: 10px;
-        margin-right: 20px;
-    }
-
-    aside.menu-left .aside-footer .download img{
+    
+    aside.menu-left-xs .icon-xs-bottom ul li:first-child{
         width: 20px;
-        padding: 0;
-        margin-right: 10px;
-    }
+   } 
 
-    aside.menu-left .aside-footer .profilo img{
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color: #808080;
-        padding: 0;
-        margin-right: 10px;
-    }
-
+   aside.menu-left-xs .icon-xs-bottom ul li:last-child{
+    width: 30px;
+    height: 30px;
+    background-color: #808080;
+    border-radius: 50%;
+    overflow: hidden;
+    } 
 
     /* CONTENUTO RIGHT */
 
@@ -367,7 +176,7 @@ a{
     main .content-right .header-album{
         display: flex;
         width: 100%;
-        height: 10vh;
+        height: 100px;
         align-items: center;
         justify-content: right;
         background-color: #080b12;
@@ -386,13 +195,13 @@ a{
 
     main .content-right .musica{
         width: 100%;
-        height: calc(100vh - 20vh);
+        height: calc(100vh - 200px);
         background-color: #141922;
         overflow: auto;
         overflow-x: hidden;
     }
 
-    /* CONTENT RIGHT MENU ALBUM */
+    /* CONTENT RIGHT TOP MENU ALBUM */
 
     main .musica .menu-album{
         width: 70%;
@@ -404,9 +213,13 @@ a{
     main .menu-album ul{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        font-size: 10px;
+        font-weight: bold;
     }
 
     main .menu-album li{
+        padding-top: 20px;
         margin-right: 15px;
     }
 
@@ -420,12 +233,14 @@ a{
         display: flex;
         width: 100%;
         margin-left: 15px;
+        flex-wrap: wrap;
     }
 
     main.main-app .musica .album .img-album{
-        width: calc(100% / 6 - 20px);
+        width: calc(100% / 2 - 20px);
         text-align: center;
         margin-right: 15px;
+        font-size: 13px;
     }
 
     main.main-app .musica .album .img-album img{
@@ -442,11 +257,16 @@ a{
         color: #7c7e83;
     }
 
+    main.main-app .artisti-popolari img{
+        border-radius: 50%;
+    }
+
     /* FOOTER */
 
     footer.app-footer{
+        width: 100%;
         display: flex;
-        height: 10vh;
+        height: 100px;
         background-color: #282828;
         align-items: center;
     }
@@ -454,7 +274,7 @@ a{
     /* FOOTER BRANO */
 
     footer.app-footer .brano{
-        width: 25%;
+        width: 30%;
         display: flex;
         align-items: center;
     }
@@ -464,49 +284,58 @@ a{
         flex-direction: column;
     }
 
+    footer.app-footer .brano .title{
+        display: flex;
+    }
+
     footer.app-footer .brano .icon{
-        font-size: 25px;
+        display: flex;
+        font-size: 20px;
         color: #7f7f7f;
+        /* padding-left: 30px; */
+    }
+
+    footer.app-footer .brano .title h5{
+        display: flex;
     }
 
     footer.app-footer .brano img{
         width: 70px;
-        margin-left: 10px;
+        padding-left: 10px;
     }
 
     /* FOOTER CONTROLLER */
 
     footer.app-footer .controller{
-        width: 50%;
+        width: 40%;
     }
 
     /* FOOTER CONTROLLER TOP */
-    
+
     footer.app-footer .controller .controller-top{
-        height: calc(5vh - 10px);
         margin: 5px 0;
     }
 
     footer.app-footer .controller ul{
         display: flex;
         justify-content: center;
-        font-size: 23px;
+        font-size: 15px;
         color: white;
     }
 
     footer.app-footer .controller ul li{
         display: flex;
         align-items: center;
-        padding-right: 45px;
+        padding-right: 25px;
     }
 
     footer.app-footer .controller ul li .fa-play{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
         border: 3px solid white;
         border-radius: 50%;
     }
@@ -515,7 +344,6 @@ a{
 
     footer.app-footer .controller .controller-bottom{
         display: flex;
-        height: calc(5vh - 10px);
         align-items: center;
         color: white;
     }
@@ -527,16 +355,226 @@ a{
         width: 100%;
     }
 
-    footer.app-footer .controller .controller-bottom hr{
-        display: inline-block;
+    footer.app-footer .linea-minuti{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
         width: 60%;
-        margin: 0 30px;
-        border: 3px solid;
     }
+
+    footer.app-footer .linea-minuti hr:first-child{
+        width: 100%;
+        margin: 0 30px;
+        border: 4px solid;
+        border-radius: 4px;
+    }
+
+    footer.app-footer .linea-minuti hr:last-child{
+        position: absolute;
+        width: 25%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        margin-left: 30px;
+        border: 4px solid black;
+        border-radius: 4px;
+    }
+
     /* FOOTER VOLUME */
 
     footer.app-footer .volume{
+        display: flex;
+        justify-content: right;
         width: 25%;
+    }
+
+    footer.app-footer .volume ul{
+        display: flex;
+    }
+
+    footer.app-footer .volume ul li{
+        padding-right: 15px;
+    }
+
+    footer.app-footer .volume ul li a{
+        color: white;
+    }
+
+    footer.app-footer .volume .linea-minuti{
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    footer.app-footer .volume .linea-minuti hr:first-child{
+        margin: 0;
+        border: 3px solid;
+    }
+
+    footer.app-footer .volume .linea-minuti hr:last-child{
+        margin: 0;
+        border: 3px solid black;
+    }
+}
+
+/* RESPONSIVE S 601px - 767px */
+
+@media screen and (min-width:601px){
+    /*  MAIN  */
+    
+    .main-app{
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    /* MAIN MENU LEFT */
+
+    /* IMPORTANTE DA VISUALIZZARE SOLO IN SEZIONE RESPOSIVE XS */
+    aside.menu-left-xs{
+        display: none;
+    }
+
+    /* ASIDE */
+
+    aside.menu-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        max-width: 100%;
+        padding-left: 25px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    aside.menu-left img{
+        width: 150px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    aside.menu-left nav.nav-bar .playlist ul li{
+        display: flex;
+        padding-top: 20px;
+    }
+
+    aside.menu-left nav.nav-bar ul li a{
+        display: flex;
+        align-items: center;
+    }
+
+    aside.menu-left nav.nav-bar ul li img{
+        width: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        filter: grayscale(100%);
+    }
+
+    aside.menu-left .nav-bar .new-playlist{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    aside.menu-left .nav-bar .new-playlist a i{
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+        line-height: 45px;
+        text-align: center;
+        color: black;
+        background-color: #a3a3a3;
+    }
+
+    aside.menu-left .playlist{
+        overflow: auto;
+        height: 40vh;
+    }
+
+    /* ASIDE FOOTER */
+
+    aside.menu-left .aside-footer a{
+        display: flex;
+        align-items: center;
+    }
+
+    aside.menu-left .aside-footer .download{
+        border-bottom: 1px solid #717171;
+        padding-bottom: 10px;
+        margin-right: 20px;
+    }
+
+    aside.menu-left .aside-footer .download img{
+        width: 20px;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    aside.menu-left .aside-footer .profilo img{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #808080;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    /* MAIN */
+    
+    main.main-app .musica .album .img-album{
+        width: calc(100% / 2 - 20px);
+        text-align: center;
+        margin-right: 15px;
+        font-size: 13px;
+    }
+    
+}
+
+/* RESPONSIVE M 768px - 1199px */
+
+@media screen and (min-width:768px){ 
+
+    /* IMPORTANTE DA VISUALIZZARE SOLO IN SEZIONE RESPOSIVE XS */
+    aside.menu-left-xs{
+        display: none;
+    }
+
+    /* CONTENT RIGHT TOP MENU ALBUM */
+
+    main.main-app .musica .album .img-album{
+        width: calc(100% / 4 - 20px);
+        text-align: center;
+        margin-right: 15px;
+        font-size: 13px;
+    }
+
+
+}
+
+/* RESPONSIVE L 1200px IN SU */
+
+@media screen and (min-width:1200px){
+
+    /* IMPORTANTE DA VISUALIZZARE SOLO IN SEZIONE RESPOSIVE XS */
+    aside.menu-left-xs{
+        display: none;
+    }
+
+    /* CONTENT RIGHT TOP MENU ALBUM */
+
+    main .menu-album ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* CONTENT RIGHT ALBUM */
+
+    main.main-app .musica .album .img-album{
+        width: calc(100% / 6 - 20px);
+        text-align: center;
+        margin-right: 15px;
     }
 
 }
