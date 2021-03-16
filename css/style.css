@@ -42,6 +42,10 @@ a{
     padding-left: 10px;
 }
 
+.p-l-25{
+    padding-left: 25px;
+}
+
 .p-b-5{
     padding-bottom: 5px;
 }
@@ -104,6 +108,10 @@ a{
     color: #7c7e83;
 }
 
+.border-left{
+    border-left: 5px solid green;
+}
+
 /* MEDIA QUERI  */
 
 /* RESPONSIVE XS 0-600PX */
@@ -154,7 +162,7 @@ a{
     
     aside.menu-left-xs .icon-xs-bottom ul li:first-child{
         width: 20px;
-   } 
+    } 
 
    aside.menu-left-xs .icon-xs-bottom ul li:last-child{
     width: 30px;
@@ -184,11 +192,16 @@ a{
 
     main .content-right .header-album .btn{
         padding: 10px 50px;
-        margin-right: 5px;
+        margin-right: 20px;
         font-size: 16px;
         color: white;
         background-color: #080b12;
         border-radius: 20px;
+    }
+
+    main .content-right .header-album .btn:hover{
+        cursor: pointer;
+        transform: scale(1.1);
     }
 
     /* CONTENT RIGHT MUSICA */
@@ -219,8 +232,20 @@ a{
     }
 
     main .menu-album li{
-        padding-top: 20px;
+        margin-top: 20px;
         margin-right: 15px;
+    }
+
+    main .musica .menu-album li a:hover{
+        color: white;
+    }
+
+    main .menu-album li .evidenziatore{
+        width: 40px;
+        margin: auto;
+        padding-top: 5px;
+        border-bottom: 5px solid #adff2f;
+        
     }
 
     main .menu-album li a{
@@ -237,11 +262,47 @@ a{
     }
 
     main.main-app .musica .album .img-album{
+        position: relative;
         width: calc(100% / 2 - 20px);
         text-align: center;
         margin-right: 15px;
         font-size: 13px;
+        cursor: pointer;
     }
+
+    /* LAYOVER */
+
+    main.main-app .album .img-album .layover-play{
+        position: relative;
+    }
+
+    main.main-app .album .img-album .layover-play .layover{
+        position: absolute;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; 
+    }
+
+    section.artisti-popolari .album .img-album .layover-play .layover{
+        border-radius: 50%;
+    }
+
+    main.main-app .album .img-album .layover-play i{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        color: white;
+    }
+
+    main.main-app .album .img-album .layover-play:hover .layover{
+        display: block;
+    }
+
 
     main.main-app .musica .album .img-album img{
         width: 100%;
@@ -292,11 +353,21 @@ a{
         display: flex;
         font-size: 20px;
         color: #7f7f7f;
-        /* padding-left: 30px; */
+        padding-left: 30px;
     }
 
     footer.app-footer .brano .title h5{
         display: flex;
+    }
+
+    footer.app-footer .brano .title h5:hover a{
+        color: white;
+        text-decoration: underline;
+    }
+
+    footer.app-footer .brano i:hover{
+        color: white;
+        cursor: pointer;
     }
 
     footer.app-footer .brano img{
@@ -340,6 +411,13 @@ a{
         border-radius: 50%;
     }
 
+    footer.app-footer .controller ul li i:hover{
+        cursor: pointer;
+    }
+
+    footer.app-footer .controller ul li .fa-play:hover{
+        transform: scale(1.5);
+    }
     /* FOOTER CONTROLLER BOTTOM */
 
     footer.app-footer .controller .controller-bottom{
@@ -370,7 +448,7 @@ a{
         border-radius: 4px;
     }
 
-    footer.app-footer .linea-minuti hr:last-child{
+    footer.app-footer .linea-minuti .cerchio hr{
         position: absolute;
         width: 25%;
         top: 50%;
@@ -379,6 +457,31 @@ a{
         margin-left: 30px;
         border: 4px solid black;
         border-radius: 4px;
+    }
+
+    footer.app-footer .linea-minuti .cerchio .ciao{
+        display: none;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 50%;
+        left: 25%;
+        transform: translateY(-50%);
+        margin-left: 27px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+
+    footer.app-footer .linea-minuti:hover{
+        cursor: pointer;
+    }
+
+    footer.app-footer .linea-minuti:hover .cerchio hr{
+        border-color: #adff2f;
+    } 
+    footer.app-footer .linea-minuti:hover .ciao{
+        display: block;
     }
 
     /* FOOTER VOLUME */
@@ -406,15 +509,6 @@ a{
         margin-right: 20px;
     }
 
-    footer.app-footer .volume .linea-minuti hr:first-child{
-        margin: 0;
-        border: 3px solid;
-    }
-
-    footer.app-footer .volume .linea-minuti hr:last-child{
-        margin: 0;
-        border: 3px solid black;
-    }
 }
 
 /* RESPONSIVE S 601px - 767px */
@@ -443,7 +537,6 @@ a{
         justify-content: space-between;
         width: 300px;
         max-width: 100%;
-        padding-left: 25px;
         overflow: hidden;
         background-color: black;
     }
@@ -459,9 +552,19 @@ a{
         padding-top: 20px;
     }
 
+
+
     aside.menu-left nav.nav-bar ul li a{
         display: flex;
         align-items: center;
+    }
+
+    aside.menu-left a:hover{
+        color: white;
+    }
+
+    aside.menu-left .new-playlist:hover .fas.fa-plus{
+        background-color: white;
     }
 
     aside.menu-left nav.nav-bar ul li img{
@@ -469,7 +572,6 @@ a{
         padding-top: 10px;
         padding-bottom: 10px;
         padding-right: 10px;
-        filter: grayscale(100%);
     }
 
     aside.menu-left .nav-bar .new-playlist{
